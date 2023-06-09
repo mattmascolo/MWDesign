@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap");
 
 body {
   background-color: #ffffff;
   overflow-x: hidden;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .svg_main {
@@ -28,7 +28,7 @@ body {
 }
 
 .Grotesk {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .underline-blue {

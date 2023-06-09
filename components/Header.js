@@ -25,26 +25,26 @@ export default function Header() {
       <div className="grotesk mt-6 mb-16 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
         <div className="mt-4 inline-block pb-4 pl-8">
           <a href="/" className="align-middle text-3xl font-bold text-black">
-            NINE4
+            MWDesign
           </a>
           <div className="hidden pl-14 align-middle xl:inline-block">
             <a href="/" className="pr-12 text-xl text-black">
-              Cras.
+              Our Work
             </a>
             <a href="/" className="pr-12 text-xl text-black">
-              Cras.
+              About Us
             </a>
             <a href="/" className="pr-12 text-xl text-black">
-              Fringilla.
+              Testimonials
             </a>
             <a href="/" className="text-xl text-black">
-              Enim.
+              Contact Us
             </a>
           </div>
         </div>
         <div className="flex items-center">
           <div className="hidden py-1 text-right xl:inline-block">
-            <a
+            {/* <a
               className="mt-2 inline-flex items-center px-12 py-3 text-lg font-semibold tracking-tighter text-black"
               href="/"
             >
@@ -55,7 +55,7 @@ export default function Header() {
               href="/"
             >
               Request a demo
-            </a>
+            </a> */}
           </div>
           <button className="pr-12 pl-4">
             <svg
