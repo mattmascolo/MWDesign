@@ -1,104 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
+import Contact from "./Contact";
+import WebsiteManagement from "./WebsiteManagement";
+
+import { useState } from "react";
 
 export default function Main() {
+  // const still = "/images/BlueSandsStillMockup.png";
+  // const animated = "/images/WebDesignMockupGif.gif";
+  // const [src, setSrc] = useState(still);
   return (
-    <div className="grotesk max-w-8xl mx-auto">
+    <div className="grotesk max-w-7xl mx-auto">
       <section className="w-full text-black">
-        <div className="max-w-8xl mx-auto inline-block items-center p-3 pt-0 lg:flex lg:flex-wrap lg:pt-4">
+        <div className="max-w-8xl mx-auto inline-block items-center px-3 pt-0 lg:flex lg:flex-wrap lg:pt-4">
           <div className="lg:w-3/6">
             <h2 className="max-w-xl lg:text-[4.2em] text-3xl font-bold leading-none text-black inline-block">
             Transforming ideas into stunning websites.
             </h2>
 
             <p className="mt-6 max-w-2xl text-xl font-semibold text-[#404040]">
-              Lorem ipsum urna, consectetur adipiscing elit. Urna risus
-              hendrerit dignissim duis fringilla sit. Lacus porttitor neque
-              ipsum.
+            With a blend of creativity and technical skill, we transform your vision into dynamic, visually impressive, and user-centric websites.
             </p>
           </div>
-          <div className="mb-20 mt-44 hidden w-full flex-col lg:mt-12 lg:inline-block lg:w-3/6">
-            <img src="/images/placeholder.png" alt="Hero" />
+          <div 
+          // onMouseEnter={() => setSrc(animated)}
+          // onMouseLeave={() => setSrc(still)}
+          className="mb-20 mt-44 hidden w-full lg:mt-12 lg:flex lg:w-3/6 overflow-hidden justify-center">
+            <img className=" w-[101%]" src="/images/BlueSandsStillMockup.png" alt="Hero" />
           </div>
           <div className="my-20 inline-block w-full flex-col lg:mt-0 lg:hidden lg:w-2/5">
-            <img src="/images/placeholder.png" alt="image" />
+            <img src="/images/BlueSandsStillMockup.png" alt="image" />
           </div>
         </div>
-        <div className="mt-0 bg-white lg:mt-40">
-          <div className="mx-auto">
-            <div className="mx-auto px-5 py-24 lg:px-24">
-              <div className="my-10 flex w-full flex-col text-center">
-                <h2 className="mb-5 text-2xl font-bold text-black lg:text-3xl">
-                  In ullamcorper magna nunc, non molestie augue feugiat eget.
-                </h2>
-              </div>
-              <div
-                className="
-                grid grid-cols-2
-                gap-16
-                text-center
-                lg:grid-cols-6"
-              >
-                <div className="hidden items-center justify-center lg:inline-block">
-                  <img
-                    src="/images/segment.png"
-                    alt="Segment"
-                    className="block h-24 object-contain"
-                  />
-                </div>
-                <div className="hidden items-center justify-center lg:inline-block">
-                  <img
-                    src="/images/segment.png"
-                    alt="Segment"
-                    className="block h-24 object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center">
-                  <img
-                    src="/images/segment.png"
-                    alt="Segment"
-                    className="block h-24 object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center">
-                  <img
-                    src="/images/segment.png"
-                    alt="Segment"
-                    className="block h-24 object-contain"
-                  />
-                </div>
-                <div className="hidden items-center justify-center lg:inline-block">
-                  <img
-                    src="/images/segment.png"
-                    alt="Segment"
-                    className="block h-24 object-contain"
-                  />
-                </div>
-                <div className="hidden items-center justify-center lg:inline-block">
-                  <img
-                    src="/images/segment.png"
-                    alt="Segment"
-                    className="block h-24 object-contain"
-                  />
-                </div>
-              </div>
-              <div className="my-12 flex w-full flex-col pl-8 text-center">
-                <a
-                  href="/"
-                  className="
-                  underline-blue
-                  mb-8
-                  mt-6
-                  text-xl
-                  font-bold
-                  text-black
-                "
-                >
-                  Ut eleifend.
-                </a>
-              </div>
-            </div>
-          </div>
+        <WebsiteManagement />
+        <div className="mt-0 bg-white lg:mt-10" id="philosophy">
           <div className="text-black">
             <div
               className="
@@ -112,19 +47,15 @@ export default function Main() {
             "
             >
               <div className="mr-0 mb-6 w-full py-4 text-center lg:w-2/3">
-                <h2 className="mb-4 text-4xl font-bold sm:text-5xl">
-                  Sem enim cursus orci at.
+                <h2 className="mb-4 text-3xl font-bold sm:text-5xl">
+                Responsive Design, <br /> Seamless Experience
                 </h2>
                 <p className="mb-4 text-lg leading-relaxed">
-                  In ullamcorper magna nunc, non molestie augue feugiat eget.
-                  Mauris, vitae et, vitae et cursus amet tincidunt feugiat
-                  nulla. Senectus maecenas diam risus sodales dictum eu. Eget
-                  cursus sit bibendum pulvinar faucibus vitae nam sed. Faucibus
-                  vel laoreet.
+                Our adaptive web design process provides an unmatched responsive user experience across desktop, mobile, and tablet platforms.
                 </p>
-                <a href="/" className="underline-blue font-semibold">
+                {/* <a href="/" className="underline-blue font-semibold">
                   Learn more
-                </a>
+                </a> */}
               </div>
               <img
                 className="
@@ -137,7 +68,7 @@ export default function Main() {
                 lg:inline-block 
                 lg:w-4/6
               "
-                src="/images/placeholder.png"
+                src="/images/WebDesignMockupGif.gif"
                 alt="img"
               />
 
@@ -157,7 +88,8 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="mx-auto px-5 pt-32 pb-24 lg:px-24">
+        <Contact />
+        {/* <div className="mx-auto px-5 pt-32 pb-24 lg:px-24">
           <div className="my-3 flex w-full flex-col text-left lg:text-center">
             <h2 className="bold mb-8 text-4xl font-bold leading-tight text-black lg:text-6xl">
               Lorem ipsum elit sit unar,{" "}
@@ -298,8 +230,8 @@ export default function Main() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </section>
     </div>
   );

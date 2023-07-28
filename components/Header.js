@@ -17,9 +17,9 @@ export default function Header() {
         text-white
       "
       >
-        Scelerisque egestas et euismod.
-        <a href="/" className="pl-3 underline">
-          Take me there
+        Let us help you grow your business!
+        <a href="#contact" className="pl-3 underline">
+          Let's talk!
         </a>
       </div>
       <div className="grotesk mt-6 mb-16 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
@@ -28,16 +28,13 @@ export default function Header() {
             MWDesign
           </a>
           <div className="hidden pl-14 align-middle xl:inline-block">
-            <a href="/" className="pr-12 text-xl text-black">
-              Our Work
+            <a href="#approach" className="pr-12 text-xl text-black">
+              Our Approach
             </a>
-            <a href="/" className="pr-12 text-xl text-black">
-              About Us
+            <a href="#philosophy" className="pr-12 text-xl text-black">
+              Design Philosophy
             </a>
-            <a href="/" className="pr-12 text-xl text-black">
-              Testimonials
-            </a>
-            <a href="/" className="text-xl text-black">
+            <a href="#contact" className="text-xl text-black">
               Contact Us
             </a>
           </div>
