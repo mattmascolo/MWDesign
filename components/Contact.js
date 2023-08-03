@@ -43,7 +43,7 @@ export default function Contact() {
       <div className="mx-auto max-w-2xl text-center" id='contact'>
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
         <p className="mt-2 mb-5 text-lg leading-8 text-gray-600">
-          Let&aposs talk about how we can help improve your web presence!
+          Let&apos;s talk about how we can help improve your web presence!
         </p>
       </div>
       <div className='mx-auto max-w-4xl'>

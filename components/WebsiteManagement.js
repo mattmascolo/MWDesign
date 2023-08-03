@@ -33,7 +33,7 @@ export default function Example() {
           Our Unique Approach
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-          Discover the distinguishing elements of our web design and development process. We&aposre committed to providing personalized, collaborative, and future-focused solutions tailored to your business needs.
+          Discover the distinguishing elements of our web design and development process. We&apos;re committed to providing personalized, collaborative, and future-focused solutions tailored to your business needs.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
