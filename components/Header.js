@@ -21,7 +21,7 @@ export default function Header() {
       >
         Let us help you grow your business!
         <a href="#contact" className="pl-3 underline">
-          Let's talk!
+          Let&aposs talk!
         </a>
       </div>
       <div className="grotesk mt-6 mb-16 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
