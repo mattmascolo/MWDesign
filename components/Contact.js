@@ -12,10 +12,20 @@
   }
   ```
 */
+// 
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Submit from './Submit'
+import { useState } from 'react';
+
 
 export default function Contact() {
-
+  const [first_name, setFirstName] = useState('first name');
+  const [last_name, setLastName] = useState('last name');
+  const [email, setEmail] = useState('mattmascolo@gmail.com');
+  const [message, setMessage] = useState('test msg');
+  const [phone_number, setPhoneNumber] = useState('test phone');
+  const [organization, setOrganization] = useState('test company');
+  
   return (
     <div className="isolate bg-white px-6 pt-8 pb-24 lg:px-8">
       <div
@@ -32,11 +42,11 @@ export default function Contact() {
       </div>
       <div className="mx-auto max-w-2xl text-center" id='contact'>
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 mb-5 text-lg leading-8 text-gray-600">
           Let's talk about how we can help improve your web presence!
         </p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <div className='mx-auto max-w-4xl'>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -44,6 +54,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setFirstName(e.target.value)}
                 type="text"
                 name="first-name"
                 id="first-name"
@@ -58,6 +69,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setLastName(e.target.value)}
                 type="text"
                 name="last-name"
                 id="last-name"
@@ -72,6 +84,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setOrganization(e.target.value)}
                 type="text"
                 name="company"
                 id="company"
@@ -86,6 +99,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 name="email"
                 id="email"
@@ -106,18 +120,15 @@ export default function Contact() {
                 <select
                   id="country"
                   name="country"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-4 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                 >
                   <option>US</option>
                   <option>CA</option>
                   <option>EU</option>
                 </select>
-                <ChevronDownIcon
-                  className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                  aria-hidden="true"
-                />
               </div>
               <input
+                onChange={(e) => setPhoneNumber(e.target.value)}
                 type="tel"
                 name="phone-number"
                 id="phone-number"
@@ -132,6 +143,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <textarea
+                onChange={(e) => setMessage(e.target.value)}
                 name="message"
                 id="message"
                 rows={4}
@@ -142,14 +154,15 @@ export default function Contact() {
           </div>
         </div>
         <div className="mt-10">
-          <button
+          <Submit first_name={first_name} last_name={last_name} organization={organization} email={email} phone={phone_number} message={message} />
+          {/* <button
             type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Let's talk
-          </button>
+          </button> */}
         </div>
-      </form>
+      </div>
     </div>
   )
 }

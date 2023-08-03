@@ -57,7 +57,7 @@ export default function Main() {
                   Learn more
                 </a> */}
               </div>
-              <img
+              {/* <img
                 className="
                 lg:w-5/7
                 mb-40
@@ -70,21 +70,9 @@ export default function Main() {
               "
                 src="/images/WebDesignMockupGif.gif"
                 alt="img"
-              />
+              /> */}
+            <video className="w-5/6 lg:w-4/6 h-auto" autoPlay loop muted src="/videos/BlueSandsMockupFinal-1.mp4"></video>
 
-              <img
-                className="
-              mb-24
-              inline-block
-              w-5/6
-              rounded
-              object-cover object-center
-              lg:hidden
-              lg:w-4/6 
-            "
-                src="/images/placeholder.png"
-                alt="img"
-              />
             </div>
           </div>
         </div>
