@@ -2,6 +2,8 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Contact from "./Contact";
 import WebsiteManagement from "./WebsiteManagement";
+import Image from "next/image";
+import blueSandsMockup from "../public/images/BlueSandsStillMockup.png";
 
 import { useState } from "react";
 
@@ -24,7 +26,7 @@ export default function Main() {
           </div>
           <div 
           className="mb-20 mt-44 hidden w-full lg:mt-12 lg:flex lg:w-3/6 overflow-hidden justify-center">
-            <img className="w-[101%]" src="/images/BlueSandsStillMockup.png" loader="/images/placeholder.png" alt="Hero" />
+            <Image className="w-[101%]" src={blueSandsMockup} placeholder="blur" alt="Hero" />
           </div>
           <div className="my-20 inline-block w-full flex-col lg:mt-0 lg:hidden lg:w-2/5">
             <img src="/images/BlueSandsStillMockup.png"  alt="image" />
