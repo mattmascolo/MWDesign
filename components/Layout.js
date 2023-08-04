@@ -23,13 +23,11 @@ export default function Main() {
             </p>
           </div>
           <div 
-          // onMouseEnter={() => setSrc(animated)}
-          // onMouseLeave={() => setSrc(still)}
           className="mb-20 mt-44 hidden w-full lg:mt-12 lg:flex lg:w-3/6 overflow-hidden justify-center">
-            <img className=" w-[101%]" src="/images/BlueSandsStillMockup.png" alt="Hero" />
+            <img className="w-[101%]" src="/images/BlueSandsStillMockup.png" loader="/images/placeholder.png" alt="Hero" />
           </div>
           <div className="my-20 inline-block w-full flex-col lg:mt-0 lg:hidden lg:w-2/5">
-            <img src="/images/BlueSandsStillMockup.png" alt="image" />
+            <img src="/images/BlueSandsStillMockup.png"  alt="image" />
           </div>
         </div>
         <WebsiteManagement />
