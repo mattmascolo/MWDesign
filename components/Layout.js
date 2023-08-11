@@ -2,10 +2,10 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Contact from "./Contact";
 import WebsiteManagement from "./WebsiteManagement";
-import Image from "next/image";
-import blueSandsMockup from "../public/images/BlueSandsStillMockup.png";
 
 import { useState } from "react";
+import VideoMockup from "./Video";
+import HeroImage from "./HeroImage";
 
 export default function Main() {
   // const still = "/images/BlueSandsStillMockup.png";
@@ -25,11 +25,8 @@ export default function Main() {
             </p>
           </div>
           <div 
-          className="mb-20 mt-44 hidden w-full lg:mt-12 lg:flex lg:w-3/6 overflow-hidden justify-center">
-            <Image src={blueSandsMockup} placeholder="blur" alt="Hero" />
-          </div>
-          <div className="my-20 inline-block w-full flex-col lg:mt-0 lg:hidden lg:w-2/5">
-            <Image src={blueSandsMockup} placeholder="blur" alt="Hero" />
+          className="my-20 inline-block lg:mb-20 w-full lg:mt-12 lg:flex lg:w-3/6 overflow-hidden justify-center">
+            <HeroImage />
           </div>
         </div>
         <WebsiteManagement />
@@ -57,21 +54,7 @@ export default function Main() {
                   Learn more
                 </a> */}
               </div>
-              {/* <img
-                className="
-                lg:w-5/7
-                mb-40
-                hidden
-                w-5/6
-                rounded object-cover
-                object-center
-                lg:inline-block 
-                lg:w-4/6
-              "
-                src="/images/WebDesignMockupGif.gif"
-                alt="img"
-              /> */}
-            <video className="w-5/6 lg:w-4/6 h-auto" loading="lazy" poster="/images/BlueSandsStillMockup.png" autoPlay loop muted src="/videos/BlueSandsMockupFinal-1.mp4"></video>
+              <VideoMockup />
 
             </div>
           </div>

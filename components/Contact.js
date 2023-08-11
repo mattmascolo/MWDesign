@@ -27,7 +27,7 @@ export default function Contact() {
   const [organization, setOrganization] = useState('test company');
   
   return (
-    <div className="isolate bg-white px-6 pt-8 pb-24 lg:px-8">
+    <div className="isolate bg-white px-6 pt-12 mt-8 pb-24 lg:px-8" id='contact'>
       <div
         className="absolute pointer-events-none inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -40,7 +40,7 @@ export default function Contact() {
           }}
         />
       </div>
-      <div className="mx-auto max-w-2xl text-center" id='contact'>
+      <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
         <p className="mt-2 mb-5 text-lg leading-8 text-gray-600">
           Let&apos;s talk about how we can help improve your web presence!
